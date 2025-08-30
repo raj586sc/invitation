@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shri Satyanarayan Pooja Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffe4b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    position: relative;
+    background: url('img/stayanarayan.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 25px;
+    padding: 50px 25px;
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0,0,0,0.4);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.55);
+    border-radius: 25px;
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .garland-top {
+    width: 100%;
+    height: 60px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Marigold_flower.jpg/240px-Marigold_flower.jpg') repeat-x;
+    background-size: contain;
+    opacity: 0.9;
+    margin-bottom: 15px;
+  }
+
+  .top-ganesh {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #ffd700;
+    margin-bottom: 10px;
+  }
+
+  .om-text {
+    font-size: 36px;
+    font-family: 'Great Vibes', cursive;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 15px;
+  }
+
+  /* All headings using Great Vibes */
+  h1, h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px #000;
+    margin: 5px 0;
+  }
+
+  h1 { font-size: 42px; }
+  h2 { font-size: 30px; }
+
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 5px 0;
+    text-shadow: 1px 1px 3px #000;
+  }
+
+  .datetime {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffcc00;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px #000;
+  }
+
+  /* Floating diyas */
+  .diya {
+    position: absolute;
+    width: 20px;
+    height: 28px;
+    background: radial-gradient(circle at top, #ffdf00, #ff8c00);
+    border-radius: 50% 50% 40% 40%;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+    animation: flicker 1.5s infinite alternate;
+    z-index: 2;
+  }
+  .diya1 { bottom: 20px; left: 25px; }
+  .diya2 { bottom: 20px; right: 25px; }
+
+  @keyframes flicker {
+    0% { transform: scaleY(1) translateY(0); opacity: 1; }
+    100% { transform: scaleY(1.2) translateY(-3px); opacity: 0.8; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="overlay"></div>
+  
+  <div class="content">
+    <div class="garland-top"></div>
+
+    <img src="img/ganeshji.jpg" alt="Ganesh Ji" class="top-ganesh">
+    <div class="om-text">Om Ganeshaye Namah</div>
+
+    <h1>Shri Satyanarayan Pooja Invitation</h1>
+    <h2>Kushwaha Family</h2>
+
+    <p>With love and blessings, we invite you to join us for the auspicious Shri Satyanarayan Pooja and Ganesh Darshan.</p>
+
+    <p class="datetime">Date: Monday, 01 September 2025<br>Time: 3:30 PM onwards</p>
+
+    <p class="address">
+      With best regards,<br>
+      Surendra Singh Kushwaha & Family<br>
+      A/302, Neelyog Anand, Rajaram Bane Marg,<br>
+      Laxmi Nagar, Ghatkopar East
+    </p>
+  </div>
+
+  <div class="diya diya1"></div>
+  <div class="diya diya2"></div>
+</div>
+
+</body>
+</html>
